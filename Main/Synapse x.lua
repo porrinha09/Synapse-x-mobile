@@ -1,14 +1,4 @@
-local synversion = '2.0.0'
-    local HttpService = game:GetService("HttpService")
-    local response = game:HttpGet("https://api.whatexploitsare.online/status")
-    local data = HttpService:JSONDecode(response)
-
-    for _, item in pairs(data) do
-        if item.Synapse then
-            synversion = item.Synapse.exploit_version
-	end
-    end
-end)]]
+local synversion = "2.23.11"
 
 local G2L = {};
 -- StarterGui.SynapseX
@@ -298,7 +288,7 @@ G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["1e"]["TextSize"] = 15;
 G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1e"]["Size"] = UDim2.new(0, 646, 0, 27);
-G2L["1e"]["Text"] = "Synapse x Android- "..synversion;
+G2L["1e"]["Text"] = "Synapse X - "..synversion;
 G2L["1e"]["Name"] = [[TitleSynapse]];
 G2L["1e"]["BackgroundTransparency"] = 1;
 
