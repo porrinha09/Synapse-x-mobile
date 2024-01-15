@@ -1,5 +1,5 @@
 local synversion = "2.0.0"
-
+end
     local HttpService = game:GetService("HttpService")
     local response = game:HttpGet("https://api.whatexploitsare.online/status")
     local data = HttpService:JSONDecode(response)
